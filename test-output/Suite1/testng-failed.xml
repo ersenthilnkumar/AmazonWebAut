@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.org.webamazon.utils.Listener"/>
+  </listeners>
+  <test thread-count="5" name="UnitTesting(failed)">
+    <classes>
+      <class name="com.org.webamazon.test.Amazon_BookPageTest">
+        <methods>
+          <include name="beforetest"/>
+          <include name="beforemethod"/>
+          <include name="beforeClass"/>
+          <include name="aftermethod"/>
+          <include name="verifyBookDeatails" invocation-numbers="1"/>
+          <include name="teardown"/>
+          <include name="aftertest"/>
+          <include name="afterClass"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.org.webamazon.test.Amazon_BookPageTest -->
+    </classes>
+  </test> <!-- UnitTesting(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
